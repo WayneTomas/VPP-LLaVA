@@ -15,7 +15,7 @@
 <div>
 <div align="center">
     <sup>1</sup>Nanjing University of Science and Technology;
-    <sup>2</sup>SenseTime Research&emsp;
+    <sup>2</sup>Shanghai Artificial Intelliaence Laboratory&emsp;
     </br>
     <sup>&#x2709</sup> Corresponding Author
     
