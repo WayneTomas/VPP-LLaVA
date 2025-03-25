@@ -1,7 +1,6 @@
 # Visual Position Prompt for MLLM based Visual Grounding
 
 <!-- <p align="center" width="100%">
-<img src="ISEKAI_overview.png"  width="80%" height="80%">
 </p> -->
 
 <div>
