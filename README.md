@@ -40,6 +40,7 @@ Please download the annotation of the final mixture our instruction tuning data 
 
 - COCO: [train2017](http://images.cocodataset.org/zips/train2017.zip)
 - GQA: [images](https://downloads.cs.stanford.edu/nlp/data/gqa/images.zip)
+- LLaVA-Pretrain [LLaVA-Pretrain](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain).
 - VisualGenome: [part1](https://cs.stanford.edu/people/rak248/VG_100K_2/images.zip), [part2](https://cs.stanford.edu/people/rak248/VG_100K_2/images2.zip)
 - ReferIt: Due to some limitations, please search and down it by yourself.
 
@@ -50,7 +51,9 @@ After downloading all of them, organize the data as follows in `./playground/dat
 │   └── train2017
 ├── gqa
 │   └── images
-├── referit
+├── LLaVA-Pretrain
+│   └── images
+├── referit (for open-vocabulary test, optional)
 │   └── images
 └── vg
     ├── VG_100K
