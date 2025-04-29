@@ -58,7 +58,7 @@ After downloading all of them, organize the data as follows in `./playground/dat
 ```
 
 ## Acknowledgement
-This repo is changed from [LLaVA](https://github.com/haotian-liu/LLaVA). The repo also benifits form [ChatterBox (AAAI 2025)](https://github.com/sunsmarterjie/ChatterBox) and [Genixer (ECCV 2024)](https://github.com/zhaohengyuan1/Genixer)
+This repo is changed from [LLaVA v1.5](https://github.com/haotian-liu/LLaVA). The repo also benifits form [ChatterBox (AAAI 2025)](https://github.com/sunsmarterjie/ChatterBox) and [Genixer (ECCV 2024)](https://github.com/zhaohengyuan1/Genixer)
 
 Thanks for their wonderful works.
 
