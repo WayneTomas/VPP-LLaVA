@@ -183,12 +183,12 @@ The primary modifications in this project’s model are located in the following
   - Note: Pay special attention to the modifications in `train.py` from lines 697 to 776 regarding the extra encoder and related prompt data.
 </details>
 
-## 🌈 🙌 🎉 Acknowledgements
+## 🌈 Acknowledgements
 This repo is changed from [LLaVA v1.5](https://github.com/haotian-liu/LLaVA). The repo also benifits form [ChatterBox (AAAI 2025)](https://github.com/sunsmarterjie/ChatterBox) and [Genixer (ECCV 2024)](https://github.com/zhaohengyuan1/Genixer)
 
 Thanks for their wonderful works.
 
-## Cite
+## 📚 Cite
 
 ```bibtex
 @misc{tang2025visualpositionpromptmllm,
