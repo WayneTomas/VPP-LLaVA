@@ -42,7 +42,7 @@ Although Multimodal Large Language Models (MLLMs) excel at various image-related
 
 ## 👀 Examples of VPP-LLaVA
 <img src="images/visualization_gseval.jpg" alt="VPP-LLaVA Examples" style="width:100%; max-width:100%; height:auto;">
-Our method shows strong zero-shot capability on the more complicated dataset of GSEval-BBox, especially when dealing with part-object and multi-object scenarios. In the visualizations, <span style="color:green">green</span> represents the ground truth (GT), <span style="color:red">red</span> represents our VPP-LLaVA-7B, and <span style="color:purple">purple</span> represents Qwen2.5-VL-7B.
+Our method shows strong zero-shot capability on the more complicated dataset of GSEval-BBox, especially when dealing with part-object and multi-object scenarios. In the visualizations, <font color="green">green</font> represents the ground truth (GT), <font color="red">red</font> represents our VPP-LLaVA-7B, and <font color="purple">purple</font> represents Qwen2.5-VL-7B.
 
 ## ⚙️ Install
 1. Clone this repository and navigate to LLaVA folder
