@@ -1,9 +1,5 @@
 # [Visual Position Prompt for MLLM based Visual Grounding](https://arxiv.org/abs/2503.15426)
 
-<div align="center">
-  ![Project Screenshot](images/framework.jpg)
-</div>
-
 <!-- <p align="center" width="100%">
 </p> -->
 
@@ -36,6 +32,8 @@
 
 ## 👀 About VPP-LLaVA
 Although Multimodal Large Language Models (MLLMs) excel at various image-related tasks, they encounter challenges in precisely aligning coordinates with spatial information within images, particularly in position-aware tasks such as visual grounding. This limitation arises from two key factors. First, MLLMs lack explicit spatial references, making it difficult to associate textual descriptions with precise image locations. Second, their feature extraction processes prioritize global context over fine-grained spatial details, leading to weak localization capability. To address these issues, we introduce VPP-LLaVA, an MLLM enhanced with Visual Position Prompt (VPP) to improve its grounding capability. VPP-LLaVA integrates two complementary mechanisms: the global VPP overlays a learnable, axis-like tensor onto the input image to provide structured spatial cues, while the local VPP incorporates position-aware queries to support fine-grained localization. To effectively train our model with spatial guidance, we further introduce VPP-SFT, a curated dataset of 0.6M high-quality visual grounding samples. Designed in a compact format, it enables efficient training and is significantly smaller than datasets used by other MLLMs (e.g., ~21M samples in MiniGPT-v2), yet still provides a strong performance boost. The resulting model, VPP-LLaVA, not only achieves state-of-the-art results on standard visual grounding benchmarks but also demonstrates strong zero-shot generalization to challenging unseen datasets. Code and dataset will be released upon acceptance at https://github.com/WayneTomas/VPP-LLaVA.
+
+<img src="images/framework.jpg" alt="Project Screenshot" width="500">
 
 ## Install
 1. Clone this repository and navigate to LLaVA folder
