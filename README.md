@@ -1,5 +1,9 @@
 # [Visual Position Prompt for MLLM based Visual Grounding](https://arxiv.org/abs/2503.15426)
 
+<div align="center">
+  ![Project Screenshot](images/framework.jpg)
+</div>
+
 <!-- <p align="center" width="100%">
 </p> -->
 
