@@ -144,8 +144,11 @@ In VPP-LLaVA, we primarily focus on the grounding task. For more details, please
 
 ## Additional Notes
 Our work is based on the visual position prompt method built upon LLaVA-v1.5. Therefore, the overall code structure is directly inherited from LLaVA. Except for the necessary modifications, the rest, including variable and package naming, remains consistent with the original LLaVA-v1.5 code.
+
 Original Code: [llava_origianl](https://github.com/WayneTomas/VPP-LLaVA/tree/master/llava-ori).
+
 Modified Code: [vpp-llava](https://github.com/WayneTomas/VPP-LLaVA/tree/master/llava).
+
 Thus, if followers have already set up the environment for the original LLaVA version, they can simply copy the llava folder from our repository into the original LLaVA code.
 
 ## Acknowledgements
