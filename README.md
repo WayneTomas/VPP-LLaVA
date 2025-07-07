@@ -158,6 +158,8 @@ Modified Code: [vpp-llava](https://github.com/WayneTomas/VPP-LLaVA/tree/master/l
 
 Thus, if followers have already set up the environment for the original LLaVA version, they can simply copy the llava folder from our repository into the original LLaVA code.
 
+<details>
+<summary>Primary Modifications</summary>
 The primary modifications in this project’s model are located in the following areas:
 
 - **Main Model Architecture**:
@@ -175,6 +177,7 @@ The primary modifications in this project’s model are located in the following
   - [train.py](https://github.com/WayneTomas/VPP-LLaVA/blob/master/llava/train/train.py)
   - [llava_trainer.py](https://github.com/WayneTomas/VPP-LLaVA/blob/master/llava/train/llava_trainer.py)
   - Note: Pay special attention to the modifications in `train.py` from lines 697 to 776 regarding the extra encoder and related prompt data.
+</details>
 
 ## Acknowledgements
 This repo is changed from [LLaVA v1.5](https://github.com/haotian-liu/LLaVA). The repo also benifits form [ChatterBox (AAAI 2025)](https://github.com/sunsmarterjie/ChatterBox) and [Genixer (ECCV 2024)](https://github.com/zhaohengyuan1/Genixer)
