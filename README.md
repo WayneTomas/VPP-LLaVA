@@ -54,6 +54,7 @@ pip install -e ".[train]"
 ```
 
 4. Install flash-attention v2
+
 You can install `flash-attention` using the following command:
 ```bash
 pip install flash-attn --no-build-isolation
@@ -102,6 +103,7 @@ Please download the annotation of the final mixture our instruction tuning data 
 - LLaVA-Pretrain: [LLaVA-Pretrain](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain).
 - VisualGenome: [part1](https://cs.stanford.edu/people/rak248/VG_100K_2/images.zip), [part2](https://cs.stanford.edu/people/rak248/VG_100K_2/images2.zip)
 - ReferIt: Due to some limitations, please search and down it by yourself.
+- GSEval: Please refer to [GSEval](https://huggingface.co/datasets/hustvl/GSEval) for more details.
 
 After downloading all of them, organize the data as follows in `./playground/data`,
 
@@ -116,6 +118,34 @@ After downloading all of them, organize the data as follows in `./playground/dat
     ├── VG_100K
     └── VG_100K_2
 ```
+
+2. Start training!
+
+You may download original LLaVA-v1.5 of liuhaotian's pretrained models in [Model Zoo](https://huggingface.co/collections/liuhaotian/llava-15-653aac15d994e992e2677a7e)
+
+Training script with DeepSpeed ZeRO-3: [`con_sft.sh`](https://github.com/WayneTomas/VPP-LLaVA/tree/master/scripts/vpp-llava/con_sft.sh).
+
+If you are do not have enough GPU memory:
+<details>
+- Use LoRA: 
+  **Note**: We have not modified the original LLaVA-v1.5 code for LoRA training, so theoretically it remains unchanged. However, since we have not tested LoRA training, please refer to the original LLaVA GitHub repository for solutions.
+If you are interested in finetuning LLaVA model to your own task/data, please check out [`Finetune_Custom_Data.md`](https://github.com/haotian-liu/LLaVA/blob/main/docs/Finetune_Custom_Data.md).
+</details>
+
+New options to note:
+
+- `--unfreeze_mm_vision_tower True`: set visual tower of CLIP to training mode.
+- `----mm_vision_tower_lr ${VIT_LR}`: set the lr of visual tower to ${VIT_LR}, and the default value is 2e-6.
+
+## Evaluation
+
+In VPP-LLaVA, we primarily focus on the grounding task. For more details, please refer to the [VPP-LLaVA evaluation](https://github.com/WayneTomas/VPP-LLaVA/tree/master/llava/eval).
+
+## Additional Notes
+Our work is based on the visual position prompt method built upon LLaVA-v1.5. Therefore, the overall code structure is directly inherited from LLaVA. Except for the necessary modifications, the rest, including variable and package naming, remains consistent with the original LLaVA-v1.5 code.
+Original Code: [llava_origianl](https://github.com/WayneTomas/VPP-LLaVA/tree/master/llava-ori).
+Modified Code: [vpp-llava](https://github.com/WayneTomas/VPP-LLaVA/tree/master/llava).
+Thus, if followers have already set up the environment for the original LLaVA version, they can simply copy the llava folder from our repository into the original LLaVA code.
 
 ## Acknowledgements
 This repo is changed from [LLaVA v1.5](https://github.com/haotian-liu/LLaVA). The repo also benifits form [ChatterBox (AAAI 2025)](https://github.com/sunsmarterjie/ChatterBox) and [Genixer (ECCV 2024)](https://github.com/zhaohengyuan1/Genixer)
