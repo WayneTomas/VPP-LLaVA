@@ -1,5 +1,4 @@
-# [Visual Position Prompt for MLLM based Visual Grounding](https://arxiv.org/abs/2503.15426)
-
+# <img src="images/vpp-llava-logo.png" alt="Logo" width="30" height="30"> [Visual Position Prompt for MLLM based Visual Grounding](https://arxiv.org/abs/2503.15426)
 <!-- <p align="center" width="100%">
 </p> -->
 
