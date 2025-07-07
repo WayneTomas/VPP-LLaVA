@@ -66,7 +66,7 @@ You can install `flash-attention` using the following command:
 ```bash
 pip install flash-attn --no-build-isolation
 ```
-However, if you encounter any issues with this method, we recommend downloading the specific version of the flash-attention wheel file from the Releases page and installing it manually. For example, you can download the flash_attn-2.7.0.post2+cu12torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl file and install it using the following command:
+However, if you encounter any issues with this method, we recommend downloading the specific version of the flash-attention wheel file from the [Releases page](https://github.com/Dao-AILab/flash-attention/releases) and installing it manually. For example, you can download the flash_attn-2.7.0.post2+cu12torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl file and install it using the following command:
 ```Shell
 pip install flash_attn-2.7.0.post2+cu12torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
 ```
