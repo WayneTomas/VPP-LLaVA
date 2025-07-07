@@ -73,6 +73,26 @@ pip install -e .
 # pip install flash-attn --no-build-isolation --no-cache-dir
 ```
 
+### Quick Start With HuggingFace
+
+<details>
+<summary>Example Code</summary>
+
+```Python
+from llava.model.builder import load_pretrained_model
+from llava.mm_utils import get_model_name_from_path
+
+model_path = "checkpoints/llava-vpp-7b"
+
+tokenizer, model, image_processor, context_len = load_pretrained_model(
+    model_path=model_path,
+    model_base=None,
+    model_name=get_model_name_from_path(model_path)
+)
+```
+
+Check out the details wth the `load_pretrained_model` function in `llava/model/builder.py` and the example code of visual grounding llava/eval/refcoco_all/model_refcoco_loader.py.
+
 ### Visual Instruction Tuning
 
 1. Prepare data
