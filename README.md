@@ -24,6 +24,9 @@
 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
 ![Static Badge](https://img.shields.io/badge/task-visual_grounding-red)
+![Static Badge](https://img.shields.io/badge/task-zero_shot-red)
+![Static Badge](https://img.shields.io/badge/task-part_object-red)
+![Static Badge](https://img.shields.io/badge/task-multi_object-red)
 
 
 ## 💥 News
