@@ -91,7 +91,7 @@ tokenizer, model, image_processor, context_len = load_pretrained_model(
 ```
 
 Check out the details wth the `load_pretrained_model` function in `llava/model/builder.py` and the example code of visual grounding llava/eval/refcoco_all/model_refcoco_loader.py.
-
+</details>
 
 ### Visual Instruction Tuning
 1. Prepare data
