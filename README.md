@@ -168,7 +168,7 @@ The primary modifications in this project’s model are located in the following
 
 - **Main Model Architecture**:
   - [llava_arch.py](https://github.com/WayneTomas/VPP-LLaVA/blob/master/llava/model/llava_arch.py)
-  - [llava_llama.py](https://github.com/WayneTomas/VPP-LLaVA/blob/master/llava/model/language_model/llava_llama.py) (modified the parameter list of `generate`)
+  - [llava_llama.py](https://github.com/WayneTomas/VPP-LLaVA/blob/master/llava/model/language_model/llava_llama.py) (modified `generate function` to `generate_custom function`)
 
 - **Projector**:
   - [builder.py](https://github.com/WayneTomas/VPP-LLaVA/blob/master/llava/model/multimodal_projector/builder.py)
