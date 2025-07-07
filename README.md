@@ -136,7 +136,7 @@ If you are interested in finetuning LLaVA model to your own task/data, please ch
 New options to note:
 
 - `--unfreeze_mm_vision_tower True`: set visual tower of CLIP to training mode.
-- `----mm_vision_tower_lr ${VIT_LR}`: set the lr of visual tower to ${VIT_LR}, and the default value is 2e-6.
+- `--mm_vision_tower_lr ${VIT_LR}`: set the lr of visual tower to ${VIT_LR}, and the default value is 2e-6.
 
 ## Evaluation
 
