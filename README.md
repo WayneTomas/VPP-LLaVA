@@ -74,7 +74,6 @@ pip install -e .
 ```
 
 ### Quick Start With HuggingFace
-
 <details>
 <summary>Example Code</summary>
 
@@ -93,8 +92,8 @@ tokenizer, model, image_processor, context_len = load_pretrained_model(
 
 Check out the details wth the `load_pretrained_model` function in `llava/model/builder.py` and the example code of visual grounding llava/eval/refcoco_all/model_refcoco_loader.py.
 
-### Visual Instruction Tuning
 
+### Visual Instruction Tuning
 1. Prepare data
 
 Please download the annotation of the final mixture our instruction tuning data [llava_v1_5_GRD_Chatterbox_genixer_revised.json](https://huggingface.co/datasets/wayneicloud/VPP-SFT/blob/main/llava_v1_5_GRD_Chatterbox_genixer_revised.json), and download the images from constituting datasets:
