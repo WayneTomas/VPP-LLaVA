@@ -158,6 +158,24 @@ Modified Code: [vpp-llava](https://github.com/WayneTomas/VPP-LLaVA/tree/master/l
 
 Thus, if followers have already set up the environment for the original LLaVA version, they can simply copy the llava folder from our repository into the original LLaVA code.
 
+The primary modifications in this project’s model are located in the following areas:
+
+- **Main Model Architecture**:
+  - [llava_arch.py](https://github.com/WayneTomas/VPP-LLaVA/blob/master/llava/model/llava_arch.py)
+  - [llava_llama.py](https://github.com/WayneTomas/VPP-LLaVA/blob/master/llava/model/language_model/llava_llama.py) (modified the parameter list of `generate`)
+
+- **Projector**:
+  - [builder.py](https://github.com/WayneTomas/VPP-LLaVA/blob/master/llava/model/multimodal_projector/builder.py)
+
+- **Visual Encoder**:
+  - If you attempt to change the type or parameters of the visual encoder, please refer to the [multimodal_encoder](https://github.com/WayneTomas/VPP-LLaVA/tree/master/llava/model/multimodal_encoder) directory.
+  - In addition to the default CLIP visual tower and the DETR visual encoder that we introduced, we have also included reference code for other encoders, which we hope will be helpful.
+
+- **Training**:
+  - [train.py](https://github.com/WayneTomas/VPP-LLaVA/blob/master/llava/train/train.py)
+  - [llava_trainer.py](https://github.com/WayneTomas/VPP-LLaVA/blob/master/llava/train/llava_trainer.py)
+  - Note: Pay special attention to the modifications in `train.py` from lines 697 to 776 regarding the extra encoder and related prompt data.
+
 ## Acknowledgements
 This repo is changed from [LLaVA v1.5](https://github.com/haotian-liu/LLaVA). The repo also benifits form [ChatterBox (AAAI 2025)](https://github.com/sunsmarterjie/ChatterBox) and [Genixer (ECCV 2024)](https://github.com/zhaohengyuan1/Genixer)
 
