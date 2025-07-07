@@ -35,7 +35,7 @@
 -  **27 Apr, 2025**: :boom::boom: Our VPP-SFT dataset and the ablation 150K dataset have been released to Huggingface [[🤗 Huggingface Dataset](https://huggingface.co/datasets/wayneicloud/VPP-SFT/tree/main)]
 - **19 Mar, 2025**: :boom::boom:  Our paper "Visual Position Prompt for MLLM based Visual Grounding" has been submitted to IEEE Transactions on Multimedia (TMM).
 
-## 👀 About VPP-LLaVA
+## 🏆 About VPP-LLaVA
 <img src="images/framework.jpg" alt="VPP-LLaVA framework" style="width:100%; max-width:100%; height:auto;">
 
 Although Multimodal Large Language Models (MLLMs) excel at various image-related tasks, they encounter challenges in precisely aligning coordinates with spatial information within images, particularly in position-aware tasks such as visual grounding. This limitation arises from two key factors. First, MLLMs lack explicit spatial references, making it difficult to associate textual descriptions with precise image locations. Second, their feature extraction processes prioritize global context over fine-grained spatial details, leading to weak localization capability. To address these issues, we introduce VPP-LLaVA, an MLLM enhanced with Visual Position Prompt (VPP) to improve its grounding capability. VPP-LLaVA integrates two complementary mechanisms: the global VPP overlays a learnable, axis-like tensor onto the input image to provide structured spatial cues, while the local VPP incorporates position-aware queries to support fine-grained localization. To effectively train our model with spatial guidance, we further introduce VPP-SFT, a curated dataset of 0.6M high-quality visual grounding samples. Designed in a compact format, it enables efficient training and is significantly smaller than datasets used by other MLLMs (e.g., ~21M samples in MiniGPT-v2), yet still provides a strong performance boost. The resulting model, VPP-LLaVA, not only achieves state-of-the-art results on standard visual grounding benchmarks but also demonstrates strong zero-shot generalization to challenging unseen datasets. Code and dataset will be released upon acceptance at https://github.com/WayneTomas/VPP-LLaVA.
@@ -44,7 +44,7 @@ Although Multimodal Large Language Models (MLLMs) excel at various image-related
 <img src="images/visualization_gseval.jpg" alt="VPP-LLaVA Examples" style="width:100%; max-width:100%; height:auto;">
 Our method shows strong zero-shot capability on the more complicated dataset of GSEval-BBox, especially when dealing with part-object and multi-object scenarios. In the visualizations, <span style="color:green">green</span> represents the ground truth (GT), <span style="color:red">red</span> represents our VPP-LLaVA-7B, and <span style="color:purple">purple</span> represents Qwen2.5-VL-7B.
 
-## Install
+## ⚙️ Install
 1. Clone this repository and navigate to LLaVA folder
 ```bash
 git clone https://github.com/WayneTomas/VPP-LLaVA.git
@@ -105,7 +105,7 @@ tokenizer, model, image_processor, context_len = load_pretrained_model(
 Check out the details wth the `load_pretrained_model` function in `llava/model/builder.py` and the example code of visual grounding llava/eval/refcoco_all/model_refcoco_loader.py.
 </details>
 
-### Visual Instruction Tuning
+## 🛠️ Visual Instruction Tuning
 1. Prepare data
 
 Please download the annotation of the final mixture our instruction tuning data [llava_v1_5_GRD_Chatterbox_genixer_revised.json](https://huggingface.co/datasets/wayneicloud/VPP-SFT/blob/main/llava_v1_5_GRD_Chatterbox_genixer_revised.json), and download the images from constituting datasets:
@@ -149,11 +149,11 @@ New options to note:
 - `--unfreeze_mm_vision_tower True`: set visual tower of CLIP to training mode.
 - `--mm_vision_tower_lr ${VIT_LR}`: set the lr of visual tower to ${VIT_LR}, and the default value is 2e-6.
 
-## Evaluation
+## 📊 Evaluation
 
 In VPP-LLaVA, we primarily focus on the grounding task. For more details, please refer to the [VPP-LLaVA evaluation](https://github.com/WayneTomas/VPP-LLaVA/tree/master/llava/eval).
 
-## Additional Notes
+## 📝 Additional Notes
 Our work is based on the visual position prompt method built upon LLaVA-v1.5. Therefore, the overall code structure is directly inherited from LLaVA. Except for the necessary modifications, the rest, including variable and package naming, remains consistent with the original LLaVA-v1.5 code.
 
 Original Code: [llava_origianl](https://github.com/WayneTomas/VPP-LLaVA/tree/master/llava-ori).
@@ -183,7 +183,7 @@ The primary modifications in this project’s model are located in the following
   - Note: Pay special attention to the modifications in `train.py` from lines 697 to 776 regarding the extra encoder and related prompt data.
 </details>
 
-## Acknowledgements
+## 🌈 🙌 🎉 Acknowledgements
 This repo is changed from [LLaVA v1.5](https://github.com/haotian-liu/LLaVA). The repo also benifits form [ChatterBox (AAAI 2025)](https://github.com/sunsmarterjie/ChatterBox) and [Genixer (ECCV 2024)](https://github.com/zhaohengyuan1/Genixer)
 
 Thanks for their wonderful works.
