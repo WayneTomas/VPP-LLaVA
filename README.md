@@ -23,7 +23,7 @@
  
  -----------------
 
-![](https://black.readthedocs.io/en/stable/_static/license.svg)
+[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
 
 ## 💥 News
 -  **7 July, 2025**: :boom::boom: All our VPP-LLaVA code and checkpoints have been released on GitHub and Huggingface, respectively: [[🤗 VPP-LLaVA-7b](https://huggingface.co/wayneicloud/VPP-LLaVA-7b)] and [[🤗 VPP-LLaVA-13b](https://huggingface.co/wayneicloud/VPP-LLaVA-13b)]
