@@ -129,6 +129,7 @@ If you are do not have enough GPU memory:
 <details>
 <summary>LoRA</summary>
 - Use LoRA: 
+  
   **Note**: We have not modified the original LLaVA-v1.5 code for LoRA training, so theoretically it remains unchanged. However, since we have not tested LoRA training, please refer to the original LLaVA GitHub repository for solutions.
 If you are interested in finetuning LLaVA model to your own task/data, please check out [`Finetune_Custom_Data.md`](https://github.com/haotian-liu/LLaVA/blob/main/docs/Finetune_Custom_Data.md).
 </details>
