@@ -26,6 +26,7 @@
 ![](https://black.readthedocs.io/en/stable/_static/license.svg)
 
 ## 💥 News
+-  **7 July, 2025**: :boom::boom: All our VPP-LLaVA code and checkpoints have been released on GitHub and Huggingface, respectively: [[🤗 VPP-LLaVA-7b](https://huggingface.co/wayneicloud/VPP-LLaVA-7b)] and [[🤗 VPP-LLaVA-13b](https://huggingface.co/wayneicloud/VPP-LLaVA-13b)]
 -  **27 Apr, 2025**: :boom::boom: Our VPP-SFT dataset and the ablation 150K dataset have been released to Huggingface [[🤗 Huggingface Dataset](https://huggingface.co/datasets/wayneicloud/VPP-SFT/tree/main)]
 - **19 Mar, 2025**: :boom::boom:  Our paper "Visual Position Prompt for MLLM based Visual Grounding" has been submitted to IEEE Transactions on Multimedia (TMM).
 
