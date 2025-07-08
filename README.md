@@ -45,7 +45,7 @@ Although Multimodal Large Language Models (MLLMs) excel at various image-related
 Our method shows strong zero-shot capability on the more complicated dataset of GSEval-BBox, especially when dealing with part-object and multi-object scenarios. In the visualizations, <font color="green">green</font> represents the ground truth (GT), <font color="red">red</font> represents our VPP-LLaVA-7B, and <font color="purple">purple</font> represents Qwen2.5-VL-7B.
 
 ## ⚙️ Install
-1. Clone this repository and navigate to LLaVA folder
+1. Clone this repository and navigate to VPP-LLaVA folder
 ```bash
 git clone https://github.com/WayneTomas/VPP-LLaVA.git
 cd VPP-LLaVA
