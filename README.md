@@ -30,10 +30,11 @@
 
 
 ## 💥 News
+-  **11 Jul, 2025**: :boom::boom: Our paper, "Visual Position Prompt for MLLM based Visual Grounding", has been accepted by IEEE Transactions on Multimedia (TMM).
 -  **7 Jul, 2025**: :boom::boom: All our VPP-LLaVA code and checkpoints have been released on GitHub and Huggingface, respectively: [[🤗 VPP-LLaVA-7b](https://huggingface.co/wayneicloud/VPP-LLaVA-7b)] and [[🤗 VPP-LLaVA-13b](https://huggingface.co/wayneicloud/VPP-LLaVA-13b)]
 -  **30 Jun, 2025**: :boom::boom: The new version of our paper has been released: [[VPP-LLaVA paper](https://arxiv.org/pdf/2503.15426)]. Our method shows strong zero-shot capability on the more complicated dataset of GSEval-BBox, especially when dealing with part-object and multi-object scenarios.
 -  **27 Apr, 2025**: :boom::boom: Our VPP-SFT dataset and the ablation 150K dataset have been released to Huggingface [[🤗 VPP-SFT](https://huggingface.co/datasets/wayneicloud/VPP-SFT/tree/main)]
-- **19 Mar, 2025**: :boom::boom:  Our paper "Visual Position Prompt for MLLM based Visual Grounding" has been submitted to IEEE Transactions on Multimedia (TMM).
+- **19 Mar, 2025**: :boom::boom:  Our paper, "Visual Position Prompt for MLLM based Visual Grounding", has been submitted to IEEE Transactions on Multimedia (TMM).
 
 ## 🏆 About VPP-LLaVA
 <img src="images/framework.jpg" alt="VPP-LLaVA framework" style="width:100%; max-width:100%; height:auto;">
